@@ -1,0 +1,220 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+
+.light-style .menu .app-brand.demo {
+    height: 64px;
+}
+
+.dark-style .menu .app-brand.demo {
+    height: 64px;
+}
+
+.app-brand-logo.demo {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    width: 34px;
+    height: 24px;
+}
+
+.app-brand-logo.demo svg {
+    width: 35px;
+    height: 24px;
+}
+
+.app-brand-text.demo {
+    font-size: 1.375rem;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+    padding-top: 64px !important;
+}
+
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+    padding-top: 78px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+    z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+    display: block !important;
+}
+
+.demo-inline-spacing > * {
+    margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing.demo-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+    margin-top: 1.875rem !important;
+    margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+    margin-top: 5rem !important;
+    margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.rtl-only {
+    display: none !important;
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+    display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.layout-demo-placeholder img {
+    width: 900px;
+}
+
+.layout-demo-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+html[dir='rtl'] #template-customizer {
+    right: auto !important;
+    left: 0 !important;
+}
+
+.border-after {
+    border-left: 1px solid #3b4253;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.ti-trash {
+    color: #e84d4d;
+}
+
+.ti-trash:hover {
+    color: #f71212;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.table-light {
+    --bs-table-bg: #dfdfe3 !important;
+}
+
+.dark-style .invoice-print tr th {
+    color: #6f6b7d !important;
+}
+
+.dt-action-buttons {
+    display: flex;
+}
+
+.image-brand {
+    width: 200px;
+    height: 200px;
+}
+
+.container-brand-logo {
+    list-style: none !important;
+}
+
+.layout-menu-collapsed .logo-menu {
+    display: none;
+}
+
+.menu-item-child > a {
+    padding-right: 1.875rem !important;
+}
+
+.menu-item-child > a i {
+    display: block !important;
+}
+
+.menu-item-child > a::after {
+    left: 0.5rem !important;
+}
+
+.menu-item-child > a::before {
+    opacity: 0;
+}
+
+.menu-item-child .menu-sub a {
+    padding-right: 85px !important;
+}
+
+.menu-item-child .menu-sub a::before {
+    right: 4rem !important;
+}
+
+.truncate-text {
+    width: 300px;
+    height: 65px;
+}
+
+.focus-none:focus-visible,
+.focus-none:focus {
+    border: 0 !important;
+    outline: none !important;
+}
+
+.text-truncate > p {
+    margin-bottom: 0 !important;
+}
+
+.dt-print-view .pre-line tr > td:nth-child(2) {
+    white-space: pre-line !important;
+}
+
+html:not(.layout-menu-collapsed) .menu-vertical, .menu-vertical .menu-block, .menu-vertical .menu-inner > .menu-header, .menu-vertical .menu-inner > .menu-item {
+    width: 20rem !important;
+}
